@@ -12,6 +12,10 @@ namespace fun
 {
 	public partial class Form1 : Form
 	{
+		double[] array_x;
+		double[] array_y;
+		int step = 10;
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -38,10 +42,17 @@ namespace fun
 				Bitmap im = new Bitmap(w, h);
 				Graphics img = Graphics.FromImage(im);
 				img.FillRectangle(Brushes.White, 0, 0, w, h);
-				pictureBox.Image = im;
+				//________________
 
+				//________________
+				pictureBox.Image = im;
 				this.Text = comboBox_fun.Text;
 			}
+		}
+
+		private void fill_array()
+		{
+
 		}
 
 		private void button_clear_Click(object sender, EventArgs e)
