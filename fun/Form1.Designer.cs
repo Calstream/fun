@@ -40,6 +40,9 @@
             this.numericUpDown_lin_a = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_lin_b = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_pow = new System.Windows.Forms.NumericUpDown();
+            this.label_a = new System.Windows.Forms.Label();
+            this.label_b = new System.Windows.Forms.Label();
+            this.label_pow = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_from)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_to)).BeginInit();
@@ -86,9 +89,7 @@
             "COS",
             "TAN",
             "COT",
-            "SQRT",
-            "X^2",
-            "X^3"});
+            "EXP"});
             this.comboBox_fun.Location = new System.Drawing.Point(457, 117);
             this.comboBox_fun.Name = "comboBox_fun";
             this.comboBox_fun.Size = new System.Drawing.Size(121, 21);
@@ -216,11 +217,41 @@
             this.numericUpDown_pow.Size = new System.Drawing.Size(55, 20);
             this.numericUpDown_pow.TabIndex = 15;
             // 
+            // label_a
+            // 
+            this.label_a.AutoSize = true;
+            this.label_a.Location = new System.Drawing.Point(454, 158);
+            this.label_a.Name = "label_a";
+            this.label_a.Size = new System.Drawing.Size(13, 13);
+            this.label_a.TabIndex = 16;
+            this.label_a.Text = "a";
+            // 
+            // label_b
+            // 
+            this.label_b.AutoSize = true;
+            this.label_b.Location = new System.Drawing.Point(520, 158);
+            this.label_b.Name = "label_b";
+            this.label_b.Size = new System.Drawing.Size(13, 13);
+            this.label_b.TabIndex = 17;
+            this.label_b.Text = "b";
+            // 
+            // label_pow
+            // 
+            this.label_pow.AutoSize = true;
+            this.label_pow.Location = new System.Drawing.Point(454, 211);
+            this.label_pow.Name = "label_pow";
+            this.label_pow.Size = new System.Drawing.Size(36, 13);
+            this.label_pow.TabIndex = 18;
+            this.label_pow.Text = "power";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 370);
+            this.Controls.Add(this.label_pow);
+            this.Controls.Add(this.label_b);
+            this.Controls.Add(this.label_a);
             this.Controls.Add(this.numericUpDown_pow);
             this.Controls.Add(this.numericUpDown_lin_b);
             this.Controls.Add(this.numericUpDown_lin_a);
@@ -259,6 +290,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_lin_a;
         private System.Windows.Forms.NumericUpDown numericUpDown_lin_b;
         private System.Windows.Forms.NumericUpDown numericUpDown_pow;
+        private System.Windows.Forms.Label label_a;
+        private System.Windows.Forms.Label label_b;
+        private System.Windows.Forms.Label label_pow;
     }
 }
 

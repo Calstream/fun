@@ -12,11 +12,13 @@ namespace fun
 {
 	public partial class Form1 : Form
 	{
-		double[] array_x;
+        delegate double function(double x);
+        double[] array_x;
 		double[] array_y;
 		int step = 10;
+        function f;
 
-		public Form1()
+        public Form1()
 		{
 			InitializeComponent();
 		}
@@ -42,6 +44,36 @@ namespace fun
 				Bitmap im = new Bitmap(w, h);
 				Graphics img = Graphics.FromImage(im);
 				img.FillRectangle(Brushes.White, 0, 0, w, h);
+
+                function fun;
+                switch (comboBox_fun.SelectedIndex)
+                {
+                    case 0: //pow
+                        fun = x => Math.Pow(x, (double)numericUpDown_pow.Value); 
+                        break;
+                    case 1: //lin
+                        fun = x => 
+                        break;
+                    case 2: //sin 
+                        fun = x => Math.Sin(x);
+                        break;
+                    case 3: //cos
+                        fun = x => Math.Cos(x);
+                        break;
+                    case 4: //tan 
+                        fun = x => Math.Tan(x);
+                        break;
+                    case 5: //log
+                        fun = x => Math.Log(x);
+                        break;
+                    case 6: //exp
+                        fun = x => Math.Exp(x);
+                        break;
+                    default:
+                        DialogResult result = MessageBox.Show("?????????", "??????", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        break;
+                }
+
 				//________________
 
 				//________________
