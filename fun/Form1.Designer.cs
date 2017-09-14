@@ -201,13 +201,7 @@
             // 
             // numericUpDown_pow
             // 
-            this.numericUpDown_pow.DecimalPlaces = 1;
             this.numericUpDown_pow.Enabled = false;
-            this.numericUpDown_pow.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.numericUpDown_pow.Location = new System.Drawing.Point(457, 227);
             this.numericUpDown_pow.Minimum = new decimal(new int[] {
             100,
