@@ -88,12 +88,13 @@
             "SIN",
             "COS",
             "TAN",
-            "COT",
+            "ROUND",
             "EXP"});
             this.comboBox_fun.Location = new System.Drawing.Point(457, 117);
             this.comboBox_fun.Name = "comboBox_fun";
             this.comboBox_fun.Size = new System.Drawing.Size(121, 21);
             this.comboBox_fun.TabIndex = 6;
+            this.comboBox_fun.SelectedIndexChanged += new System.EventHandler(this.comboBox_fun_SelectedIndexChanged);
             // 
             // pictureBox
             // 
